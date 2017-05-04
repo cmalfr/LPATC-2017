@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+@import 'bootstrap-variables';
+@import 'variables';
+@import 'generic';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+p {
+	color: red;
+	}
