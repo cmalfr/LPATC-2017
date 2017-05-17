@@ -1,0 +1,135 @@
+body {
+  padding-top: 50px;
+  background-color: lightgrey;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.search-text{
+	background-color:#a65447;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+	
+.search-text .input-search{
+	height:45px;
+	width:400px;
+	padding-left:20px;
+    color:#333;
+} 
+
+.search-text .btn-search{
+	background-color:#a65447;
+	border:1px solid #FFF;
+	font-family:Roboto;
+	color:#FFF;
+	padding:11px 20px 11px 20px;
+}
+
+.search-text  .btn-search:hover{
+	background-color:#FFF;
+	color:#a65447;
+}
+
+@media (min-width: 992px) { 
+.mytittle{
+    background-color: white;
+    margin-left: -100px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+    }
+.mytext{
+    background-color: red;
+    margin-left: -30px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+    }    
+}
+
+.mytext2{
+    background-color: red;
+    margin-top:0px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-top: 3px;
+    
+    }
+.mytittle2{
+    background-color:grey;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-left: -10px;
+    
+    }
+
+.myimage{
+    margin-left: -30px;
+    
+    }
+
+.mytext3{
+    background-color: red;
+    margin-left: -36px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 10px;
+    
+    }
+
+.myblock{
+    background-color: grey;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    
+    }
+
+.myfooter{
+    background-color: #34414a;
+    color:white;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 10px;
+    text-align: center;
+    
+    }
+
+.list-unstyled {
+    text-align: center;
+    
+}
+
+.mybutton{
+    text-align: center;
+    padding-top: 12px;
+	text-decoration:none;
+}
+
+.btn-custom {
+    text-align: center;
+    border: 2px solid white;
+    background-color: #34414a;
+    font-family:Arial;
+	font-size:14px;
+	padding:6px 12px;
+	text-decoration:none;
+    margin-bottom: 5px;
+}
+
+.breadcrumb {background:none; border: none; border-radius: 0px; display: block;}
+.breadcrumb li {font-size: 14px;}
+.breadcrumb a {color: #a65447}
+.breadcrumb>li+li:before {color: rgba(0, 0, 0, 1); content: "\003E\00a0";}
+
+$border-radius-base: 0px;
+$border-radius-small: 0px;
+$border-radius-large: 0px;
