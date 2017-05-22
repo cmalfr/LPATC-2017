@@ -2,7 +2,11 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     livereload = require('gulp-livereload'),
-    sass = require('gulp-sass')
+    sass = require('gulp-sass'),
+	flatten = require('gulp-flatten'),
+	cssmin = require('gulp-cssmin'),
+	rename = require('gulp-rename'),
+	autoprefixer = require('gulp-autoprefixer')
     ;
 
 //paths
@@ -16,6 +20,8 @@ gulp.task('styles',function(){
           outputStyle: 'nested'
         }
       ).on('error', sass.logError))
+	  .pipe(autoprefixer("last 2 versions", "> 1%", "Explorer 7"))
+
       .pipe(gulp.dest('./web/css/'))
       .pipe(livereload())
       ;
@@ -28,7 +34,8 @@ gulp.task('html',function(){
 })
 
 gulp.task('icons',function(){
-    return gulp.src('bower_components/bootstrap-sass/assets/fonts/bootstrap/**.*')
+    return gulp.src('assets/fonts/**/*.{ttf,woff,eof,svg}')
+		.pipe(flatten())
         .pipe(gulp.dest('web/fonts'))
 })
 
@@ -37,6 +44,14 @@ gulp.task('watch', function(){
     gulp.watch([sassDir+'/*.scss', sassDir+'/*.sass'], ['styles']);
 });
 
+
 gulp.task('prod',function(){
     gulp.start('styles', 'html', 'icons');
+});
+
+gulp.task('minify', function () {
+    gulp.src('./web/css/*.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./web/css/'))
 });
