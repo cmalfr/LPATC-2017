@@ -1,0 +1,51 @@
+.myfooter{
+    background-color: $charcoal-grey;
+    color:white;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 10px;
+    text-align: center;
+    }
+	
+footer li a {
+    color: $white-three;
+    text-decoration: none;
+	}
+	
+footer li a:hover, .btn.custom:hover {
+    color: $white-three;
+    text-decoration: underline;
+	font-weight: bold;
+	}
+
+	
+.list-unstyled {
+    text-align: center;
+	font-family:'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 2.43;
+	color: $white-three;
+    margin-top: 25px;
+	}
+
+
+.footer p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.31;
+	text-align: center;
+	color: $white-three;
+    margin-top: 50px;
+	}
+
+.btn.custom {
+    text-align: center;
+    border: 2px solid $white-three;
+    background-color: $charcoal-grey;
+	font-size:16px;
+	padding: 16px 21px;
+	text-decoration:none;
+    margin: 25px 0;
+}
+

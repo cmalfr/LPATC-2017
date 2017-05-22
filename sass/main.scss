@@ -2,9 +2,11 @@
 /* CSS Document */
 @import 'bootstrap-variables';
 @import 'variables';
+@import 'colors';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'generic';
+@import 'header';
+@import 'footer';
 
 
-p {
-	color: red;
-	}
+

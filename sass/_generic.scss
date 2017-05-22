@@ -1,135 +1,231 @@
-body {
-  padding-top: 50px;
-  background-color: lightgrey;
-}
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-}
+.container.big {
+	padding-top: 50px;
+	background-color: $white-three;
+	}
+
 .search-text{
-	background-color:#a65447;
-	padding-top:60px;
-	padding-bottom:60px;
-}
-	
+	background-color: $earth;
+	padding: 30px 0px 40px;
+	}
+
+#search-form{
+	display: block;
+	margin: 0 auto;
+	}
+
 .search-text .input-search{
-	height:45px;
-	width:400px;
-	padding-left:20px;
-    color:#333;
-} 
+	width: 554px;
+	height: 47px;
+	padding: 22px;
+	color: $formcol;
+    font-style: italic;
+	background-color: $white-three;
+    border: solid 2px $dark-peach;
+	} 
 
 .search-text .btn-search{
-	background-color:#a65447;
-	border:1px solid #FFF;
-	font-family:Roboto;
-	color:#FFF;
-	padding:11px 20px 11px 20px;
-}
+	background-color: $white-three;
+    border: solid 2px $dark-peach;
+	color: $charcoal-grey;
+	font-size: 20px;
+	padding: 8px 20px;
+	margin: -3px 0px 0px -5px;
+	border-radius:0;
+	}
 
 .search-text  .btn-search:hover{
-	background-color:#FFF;
-	color:#a65447;
-}
+	background-color: $white-one;
+	color:$earth;
+	}
 
-@media (min-width: 992px) { 
+.search-link {
+    position: absolute;
+	text-decoration: underline;
+    right: 156px;
+    line-height: 45px;
+	color: $white-three;
+	}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+	}
+
+p.bold{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: $charcoal-grey;
+	}
+
+p.white{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: $white-two;
+	}
+
+p.top{
+	margin-top: 19px;
+	}
+
+.petitoblique{
+	background-image: none;
+	}
+
+p.petitoblique{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1.71;
+	color: $formcol; 
+	}
+
+p.caps{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 2px rgba(70, 87, 99, 0.65);
+    width: 330px;
+    text-align: center;
+    padding: 11px;
+    margin: 25px auto 65px
+	}
+	
+p.caps a {
+	color: $darker;
+}	
+    
+h3-like, h4petit{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: $charcoal-grey;
+	}
+
+h3-like {
+    font-size: 25px;
+	display:block;
+	}
+	
+h2-like {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.29;
+	font-size: 31px;
+	display: block;
+	}	
+	
+h4petit {
+    font-size: 20px;
+	}
+
+.separator {
+	margin-top:60px;
+	margin-bottom:15px;
+	}
+
 .mytittle{
-    background-color: white;
-    margin-left: -100px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-top: 10px;
-    
-    }
+    background-color: $white-one;
+    margin-left: -130px;
+	padding: 25px 30px 10px;
+	}
+	
 .mytext{
-    background-color: red;
-    margin-left: -30px;
-    padding-bottom: 1px;
-    padding-left: 20px;
-    padding-top: 10px;
-    
+    background-color: $white-one;
+    padding : 10px 24px;    
     }    
-}
 
 .mytext2{
-    background-color: red;
-    margin-top:0px;
-    padding-bottom: 3px;
-    padding-left: 20px;
-    padding-top: 3px;
-    
+    background-color: $white-two;
+    padding: 24px;
     }
+	
 .mytittle2{
-    background-color:grey;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-top: 10px;
-    margin-left: -10px;
-    
-    }
+    background-color: $white-one;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 10px;
+	}
 
 .myimage{
-    margin-left: -30px;
-    
-    }
+    position: relative;
+	left:-30px;
+	}
 
 .mytext3{
-    background-color: red;
-    margin-left: -36px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-right: 10px;
-    
+    background-color: $white-one;
+    padding: 15px 30px 40px 0px;
     }
 
 .myblock{
-    background-color: grey;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     padding-left: 20px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-right: 10px;
-    margin-bottom: 15px;
-    
-    }
+    margin: 30px 0px;
+    background: url(../images/bulle.png) no-repeat left bottom $white-one; 
+	}
 
-.myfooter{
-    background-color: #34414a;
-    color:white;
-    padding-left: 20px;
-    padding-top: 25px;
-    padding-right: 10px;
-    text-align: center;
-    
-    }
+.mybreadcrumb {border: none; border-radius: 0px; padding: 8px 0px;list-style: none; padding: 8px 0px;}
+.mybreadcrumb li {font-size: 14px;display: inline-block;}
+.mybreadcrumb>li+li:before {color: rgba(0, 0, 0, 1); content: "\003E\00a0";}
 
-.list-unstyled {
-    text-align: center;
-    
+.cat-links, .mybreadcrumb a  {
+	text-decoration: underline;
+	font-size: 14px;
+	color: $earth;
+	}
+
+.cat-links a:hover, .mybreadcrumb a:hover  {
+	color: $dark-peach;
+	}
+
+.c-thumbnail {
+    display: block;
+    background-color: $white-one;
+	margin: 15px 0px;
+	float:left;
 }
 
-.mybutton{
-    text-align: center;
-    padding-top: 12px;
-	text-decoration:none;
-}
+.c-thumbnail img {
+	display: block;
+	object-fit: cover;
+	height: 250px;
+	width: 407px;
+	}
 
-.btn-custom {
-    text-align: center;
-    border: 2px solid white;
-    background-color: #34414a;
-    font-family:Arial;
-	font-size:14px;
-	padding:6px 12px;
-	text-decoration:none;
-    margin-bottom: 5px;
-}
+.lastedited> .c-thumbnail > img {
+	display: block;
+	object-fit: cover;
+	height: 350px;
+	width: 407px;
+	float: left;
+	margin-right: 30px;
+	}
 
-.breadcrumb {background:none; border: none; border-radius: 0px; display: block;}
-.breadcrumb li {font-size: 14px;}
-.breadcrumb a {color: #a65447}
-.breadcrumb>li+li:before {color: rgba(0, 0, 0, 1); content: "\003E\00a0";}
+.caption {
+	display:block;
+	padding: 28px;
+	}
 
-$border-radius-base: 0px;
-$border-radius-small: 0px;
-$border-radius-large: 0px;
+.caption h3-like:before {
+    font-family: 'FontAwesome';
+    font-size: 58px;
+    content: '\f0de';
+    color: $white-one;
+    position: absolute;
+    top: 230px;
+    left: 42px;
+	}
+	
+.lastedited> .c-thumbnail > .caption h3-like:before {
+    font-family: 'FontAwesome';
+    font-size: 58px;
+    content: '\f0d9';
+    color: #fff;
+    position: absolute;
+    top: 133px;
+    left: 404px;
+	}
