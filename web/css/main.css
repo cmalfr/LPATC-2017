@@ -5809,7 +5809,6 @@ button.close {
   padding: 30px 0px 40px; }
 
 #search-form {
-  display: block;
   margin: 0 auto; }
 
 .search-text .input-search {
@@ -5878,7 +5877,18 @@ p.caps {
   text-transform: uppercase;
   font-weight: 700;
   border: solid 2px rgba(70, 87, 99, 0.65);
-  width: 330px;
+  width: 400px;
+  text-align: center;
+  padding: 11px;
+  margin: 25px auto 65px; }
+
+p.caps1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: solid 2px rgba(70, 87, 99, 0.65);
+  width: 360px;
   text-align: center;
   padding: 11px;
   margin: 25px auto 65px; }
@@ -5915,7 +5925,6 @@ h4petit {
   padding: 25px 30px 10px; }
 
 .mytext {
-  background-color: #fff;
   padding: 10px 24px; }
 
 .mytext2 {
@@ -5928,12 +5937,31 @@ h4petit {
   padding: 20px 10px; }
 
 .myimage {
-  position: relative;
-  left: -30px; }
+  position: relative; }
+
+@supports (-ms-accelerator: true) {
+  .myimage {
+    position: relative;
+    margin-top: 10px; } }
+
+@supports (-ms-ime-align: auto) {
+  .myimage {
+    position: relative;
+    margin-top: 10px; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .myimage {
+    position: relative;
+    margin-top: 10px; } }
+
+@-moz-document url-prefix() {
+  .myimage {
+    position: relative;
+    margin-top: 10px; } }
 
 .mytext3 {
   background-color: #fff;
-  padding: 15px 30px 40px 0px; }
+  padding: 10px 30px 40px 20px; }
 
 .myblock {
   padding-bottom: 10px;
@@ -6009,6 +6037,23 @@ h4petit {
   position: absolute;
   top: 133px;
   left: 404px; }
+
+.w-background {
+  background: #fff;
+  height: 420px;
+  width: 518px; }
+
+.inline {
+  display: -ms-inline-flexbox; }
+
+.w-background2 {
+  background-image: url("../images/1px.png");
+  background-size: 1250px auto;
+  background-position: center; }
+
+.whitez {
+  background-color: white;
+  margin-left: -30px; }
 
 .c-layout-header {
   background: none;
