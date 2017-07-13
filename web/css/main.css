@@ -6018,25 +6018,25 @@ h4petit {
 
 .caption {
   display: block;
-  padding: 28px; }
+  padding: 6px 28px;}
 
 .caption h3-like:before {
   font-family: 'FontAwesome';
   font-size: 58px;
   content: '\f0de';
-  color: #fff;
-  position: absolute;
-  top: 230px;
-  left: 42px; }
+  color: #FFF; 
+  position: relative;
+	float: left;
+	line-height:0px}
 
 .lastedited > .c-thumbnail > .caption h3-like:before {
   font-family: 'FontAwesome';
   font-size: 58px;
   content: '\f0d9';
   color: #fff;
-  position: absolute;
-  top: 133px;
-  left: 404px; }
+    position: relative;
+    top: 17px;
+    right: 48px }
 
 .w-background {
   background: #fff;
@@ -6110,7 +6110,7 @@ h4petit {
 
 #search, #usermenu {
   position: absolute;
-  width: 1250px;
+
   top: 150px;
   margin: auto -20px; }
 
@@ -6192,3 +6192,117 @@ footer li a:hover, .btn.custom:hover {
   padding: 16px 21px;
   text-decoration: none;
   margin: 25px 0; }
+
+/*start here*/
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+        width: 100%; }
+	
+    .container{
+		background-color: #fafafa;
+		width: 100%;
+		padding: 0px; }
+
+    h3-like{font-size: 18px;}	
+    h4petit{font-size: 18px;}
+    p{font-size: 14px;}		
+    p.bold{font-size: 12px;}
+	p.white{font-size: 18px;}
+	p.caps{display: none;}
+    p.caps1{
+		width: 285px;
+		font-size: 14px;}	
+
+  .c-layout-header {margin:0;}
+  .nav navbar-nav {display:none;}
+  .navbar-header {margin-left:32px !important;}
+  .navbar-logo img {height:35px;margin:20px 0;}
+  .navbar-logo span {display:none;}
+    
+    .pull-right{margin-top: 4px;}
+    .img1{width: 100%;}
+    .cat-links, .mybreadcrumb a{font-size: 12px;}
+    .whitez {margin-left:0px;}
+	.add{margin-bottom: 20px;}
+    .myimage{display: none;}
+    .myblock{margin: 10px 0px;}
+	
+	.search-text{margin-top: -10px;}	
+    .search-link{display: none;} 
+    .search-text .input-search{width: 300px;}
+    .search-text .btn-search{
+		margin-left: -66px;
+		border: none;
+		height: 40px; }
+	
+    .mytittle{
+		margin-left: 23px;
+		background-color: white;
+		width: 305px;
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 130px;
+		padding-top: 10px; }
+		
+    .mytittle2{
+		width: 295px;
+		margin-left: 10px;
+		padding-bottom: 0px; }
+   
+    .mytittle2 h3-like{
+		font-size: 18px;
+		font-weight: bold; }		
+		
+    .mytext{
+		width: 305px;
+		background-color: white;
+		margin-left: 23px;
+		font-size: 14px;
+		padding-left: 12px;
+		padding-right: 12px; }
+		
+    .mytext3{
+		background-color: white;
+		padding-bottom:15px; }		
+
+    .w-background {
+		background-color:transparent;
+		margin-top: -30px; }
+
+    .separator{
+		margin-top: 15px;
+		margin-bottom: 0px;
+		font-size: 18px;
+		padding-left: 18px; }
+    
+	.lastedited > .c-thumbnail > img{
+		width: 100%;
+		height: 222px; }
+		
+	.c-thumbnail img {
+	   width: 100%;
+	   height: auto;
+	   max-height: 220px; }		
+
+
+	.caption h3-like:before {
+    color: #FFF;
+    position: relative;
+    float:left;
+	bottom:0;
+	line-height: 0px }	
+		
+	.lastedited > .c-thumbnail > .caption h3-like:before{
+		font-family: 'FontAwesome';
+		font-size: 58px;
+		content: '\f0d9';
+		color: #FFF;
+		position: relative;
+float:left; }		
+		
+		
+
+}
