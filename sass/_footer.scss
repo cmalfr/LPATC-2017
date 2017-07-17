@@ -6,19 +6,18 @@
     padding-right: 10px;
     text-align: center;
     }
-	
+
 footer li a {
     color: $white-three;
     text-decoration: none;
 	}
-	
+
 footer li a:hover, .btn.custom:hover {
     color: $white-three;
     text-decoration: underline;
 	font-weight: bold;
 	}
 
-	
 .list-unstyled {
     text-align: center;
 	font-family:'Open Sans', sans-serif;
@@ -48,4 +47,3 @@ footer li a:hover, .btn.custom:hover {
 	text-decoration:none;
     margin: 25px 0;
 }
-

@@ -1,0 +1,191 @@
+/*Responsive start here*/
+@media (min-width: 959px) {
+  .mobileview {display:none;}
+  .navi {
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style: none;
+  }
+  .navi > li > a {
+    position: relative;
+    display: block;
+    padding: 64px 18px;
+    }
+}
+@media (max-width: 992px) {
+.lang{display:none;}
+}
+@media (max-width: 959px) {
+  .container {padding-top: 75px;}
+  .c-layout-header {display:none;}
+  .mobileview {
+      display: inline-block;
+      height: 75px;
+      width: 100%;
+      background-color: #455763;
+      position: absolute;
+      top: 0;
+  }
+  .mobileview a:hover, .mobileview a:focus {color:#a65447; text-decoration: underline;}
+  .mobileview img,   .mobileview a{
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 32px;
+  }
+
+  .mytext3 {background-color: transparent;}
+  .myimagedesk{float:left; margin-right:10px;}
+  .mytittle h3{margin-top: 5px; margin-bottom: 0px;}
+  .mytittle {
+    background-color: #fff;
+    margin-left:0;
+    padding: 10px 24px;
+    }
+  .mytittle2 {
+    margin:0;
+    padding: 0;
+   }
+  .search-link{display: none;}
+  .c-thumbnail img{float:right;}
+
+  .icon-desktop:before,
+  .icon-menu-close:before,
+  .icon-menu:before,
+  .icon-mobile:before,
+  .icon-submenu-down:before,
+  .icon-submenu-right:before,
+  .icon-world:before,
+  header h1:before,
+  .nav-button:before,
+  .nav-close:before,
+  .nav .nav-submenu > a:after,
+  .nav > ul > .nav-submenu > a:after {
+  	font-family: "icon-font";
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: normal;
+  	text-decoration: none;
+  	text-transform: none;
+  	vertical-align: top;
+  }
+
+  .icon-desktop:before {
+  	content: "\E001";
+  }
+
+  .icon-menu-close:before {
+  	content: "\E002";
+  }
+
+  .icon-menu:before {
+  	content: "\E003";
+  }
+
+  .icon-mobile:before {
+  	content: "\E004";
+  }
+
+  .icon-submenu-down:before {
+    content: url(../images/triangle-small.png);
+  }
+
+  .icon-submenu-right:before {
+  	content: "\E006";
+  }
+
+  .icon-world:before {
+  	content: "\E007";
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+  .nav {
+      display: none;
+      position: fixed;
+      top: 20px;
+    }
+  .container {padding-top: 30px;}
+  .lastedited > .c-thumbnail > img, .c-thumbnail img{float:none; display:block; margin:0 auto;}
+  .c-thumbnail h3, .c-thumbnail .mybreadcrumb{text-align:center;}
+
+
+    body {
+        background-color: #455763;
+        width: 100%;
+        }
+    h2, h3 {font-size:18px;}
+    h2{text-align: center;}
+    p {font-size:14px;}
+    p.bold {
+      font-size:12px;
+      margin-bottom:0px;
+      }
+    p.white{
+      font-size: 18px;
+      margin-bottom: 23px;
+      }
+    p.top{margin-left: 0px;}
+    .caps{font-size: 14px;
+    text-align: center;}
+
+    .container {
+      background-color: #fafafa;
+      width: 100%;
+     }
+     .lastedited > .c-thumbnail > .caption h3:before {
+         content: '\f0de';
+         position: relative;
+         top: 5px;
+         right: 0px;
+       }
+    .imgtop {width:100%;}
+    .img100{
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
+    .search-text{margin-top: 30px;}
+    .search-text .input-search{width: 90%; max-width: 554px;}
+    .search-text .btn-search{
+      margin-left: -66px;
+      border: none;
+      height: 40px;
+     }
+    .add{margin-bottom: 20px;}
+    .myimagedesk{display: none;}
+    .myimagemob{display: block;}
+    .myimagemob:after {
+      content: url(../images/triangle-1.png);
+      position: relative;
+      bottom: 20px;
+      left: 30px;
+      line-height: 0;
+      }
+    .myblock{margin: 10px 0px;}
+    .mybreadcrumb{
+      padding: 0px;
+    }
+    .mybreadcrumb ol {margin-bottom: 1px;}
+    .cat-links, .mybreadcrumb a {font-size: 12px;}
+    .mytext { margin-bottom: 10px; padding: 0px 24px 10px}
+
+    .mytittle h3{margin-top: 5px; margin-bottom: 0px;}
+
+    .w-background{
+      width:90%;
+      margin: -30px auto;
+    }
+    .whitez {
+      width:90%;
+      margin: 0 auto;
+    }
+}
+    @media (max-width: 420px) {
+  .c-thumbnail h3, .c-thumbnail .mybreadcrumb{text-align:left;}
+}

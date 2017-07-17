@@ -9,6 +9,7 @@
 	}
 
 #search-form{
+	display: block;
 	margin: 0 auto;
 	}
 
@@ -20,7 +21,7 @@
     font-style: italic;
 	background-color: $white-three;
     border: solid 2px $dark-peach;
-	} 
+	}
 
 .search-text .btn-search{
 	background-color: $white-three;
@@ -49,6 +50,7 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 	}
+
 
 p.bold{
     font-family: 'Montserrat', sans-serif;
@@ -79,58 +81,22 @@ p.petitoblique{
 	font-size: 14px;
 	font-style: italic;
 	line-height: 1.71;
-	color: $formcol; 
+	color: $formcol;
 	}
 
-p.caps{
+p.caps a{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     border: solid 2px rgba(70, 87, 99, 0.65);
-    width: 400px;
-    text-align: center;
+    line-height: 3em;
     padding: 11px;
-    margin: 25px auto 65px
 	}
-p.caps1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: solid 2px rgba(70, 87, 99, 0.65);
-    width: 360px;
-    text-align: center;
-    padding: 11px;
-    margin: 25px auto 65px
-	}
-	
+
 p.caps a {
 	color: $darker;
-}	
-    
-h3-like, h4petit{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: $charcoal-grey;
-	}
-
-h3-like {
-    font-size: 25px;
-	display:block;
-	}
-	
-h2-like {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    line-height: 1.29;
-	font-size: 31px;
-	display: block;
-	}	
-	
-h4petit {
-    font-size: 20px;
-	}
+}
 
 .separator {
 	margin-top:60px;
@@ -142,57 +108,31 @@ h4petit {
     margin-left: -130px;
 	padding: 25px 30px 10px;
 	}
-	
+
 .mytext{
-    padding : 10px 24px;    
-    }    
+    background-color: $white-one;
+    padding : 10px 24px;
+    }
 
 .mytext2{
     background-color: $white-two;
     padding: 24px;
     }
-	
+
 .mytittle2{
     background-color: $white-one;
     font-family: 'Montserrat', sans-serif;
-    padding: 20px 10px;
+    margin: 38px -20px;
 	}
 
 .myimage{
     position: relative;
-
+	left:-30px;
 	}
-
-@supports (-ms-accelerator:true) {
-.myimage{
-    position: relative;
-    margin-top: 10px;
-	}
-}
-
-@supports (-ms-ime-align:auto) {
- .myimage{
-    position: relative;
-    margin-top: 10px;
-	}
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-.myimage{
-    position: relative;
-    margin-top: 10px;
-	}
-}
-
-@-moz-document url-prefix() { 
-.myimage{
-    position: relative;
-    margin-top: 10px;
-	}
-}
 
 .mytext3{
     background-color: $white-one;
-    padding: 10px 30px 40px 20px;
+    padding: 15px 30px 40px 0px;
     }
 
 .myblock{
@@ -201,7 +141,7 @@ h4petit {
     padding-top: 10px;
     padding-right: 10px;
     margin: 30px 0px;
-    background: url(../images/bulle.png) no-repeat left bottom $white-one; 
+    background: url(../images/bulle.png) no-repeat left bottom $white-one;
 	}
 
 .mybreadcrumb {border: none; border-radius: 0px; padding: 8px 0px;list-style: none; padding: 8px 0px;}
@@ -242,43 +182,24 @@ h4petit {
 	}
 
 .caption {
-	display:block;
-	padding: 28px;
+	padding: 0px 28px;
 	}
 
-.caption h3-like:before {
+.caption h3:before {
     font-family: 'FontAwesome';
     font-size: 58px;
     content: '\f0de';
-    color: $white-one;
-    position: absolute;
-    top: 230px;
-    left: 42px;
+		color: #FFF;
+		position: relative;
+		bottom:15px;
+		float:left;
+		line-height: 0px;
 	}
-	
-.lastedited> .c-thumbnail > .caption h3-like:before {
-    font-family: 'FontAwesome';
-    font-size: 58px;
+
+.lastedited> .c-thumbnail > .caption h3:before {
     content: '\f0d9';
-    color: #fff;
-    position: absolute;
-    top: 133px;
-    left: 404px;
+    position: relative;
+    top: 10px;
+    right: 48px;
 	}
-
-
-.w-background {background: $white-one;height: 420px;width: 518px;
-	}
-	
-.inline{display:-ms-inline-flexbox;
-	}
-
-.w-background2 {
-    background-image: url('../images/1px.png');
-    background-size: 1250px auto;
-    background-position:  center;
-}
-.whitez{
-background-color: white;
-    margin-left: -30px;
-}
+	.myimagemob{display: none;}
